@@ -6,7 +6,7 @@
 /*   By: amedenec <amedenec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 11:32:06 by amedenec          #+#    #+#             */
-/*   Updated: 2025/04/22 12:08:47 by amedenec         ###   ########.fr       */
+/*   Updated: 2025/04/22 16:20:24 by amedenec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@ t_vec3 vec3_add(t_vec3 a, t_vec3 b)
 {
     return (vec3(a.x - b.x, a.y - b.y, a.z - b.z));
 }
+
+t_vec3 vec3_sub(t_vec3 a, t_vec3 b)
+{
+    return vec3(a.x - b.x, a.y - b.y, a.z - b.z);
+}
+
 t_vec3 vec3_scale(t_vec3 v, double s)
 {
     return vec3(v.x * s, v.y * s, v.z * s);
